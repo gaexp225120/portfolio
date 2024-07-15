@@ -1,11 +1,15 @@
-import Hero from "@/components/Hero";
+import Introduction from "@/components/Introduction";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
-    <main className="relative bg-white-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
-      <div className=" max-w-7xl w-full  ">
-        <Hero />
-      </div>
-    </main>
+    <div className="font-sans">
+      <NavBar />
+      <main className="bg-custom-gradient h-[80vh] flex justify-center items-center flex-col mx-auto sm:px-10 px-5">
+        <section>
+          <Introduction />
+        </section>
+      </main>
+    </div>
   );
 }
