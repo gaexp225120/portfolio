@@ -19,6 +19,17 @@ const config = {
     },
     extend: {
       colors: {
+        // Dark
+        pureBlack: "#333",
+        pureGrey: "#505451",
+        /// Light
+        accordionTitle: "#f2fcfc",
+        accordionContent: "#e5edf09e",
+
+        /// Purple
+        hoverPurple: "#6c4c95",
+        lightPurple: "#966edb",
+        /// rest
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -52,6 +63,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      backgroundImage: {
+        "accordion-gradient":
+          "linear-gradient(90deg, rgba(69,45,93,0.989233193277311) 10%, rgba(90,53,125,1) 38%, rgba(118,53,148,1) 65%, rgba(109,33,152,0.5914740896358543) 100%);",
       },
       borderRadius: {
         lg: "var(--radius)",

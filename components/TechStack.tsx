@@ -41,8 +41,8 @@ const TechStack = () => {
 
   const StackCard: React.FC<StackCardProps> = ({ type, stack }) => {
     return (
-      <CardContainer className="inter-var">
-        <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardContainer className="inter-var w-full">
+        <CardBody className="bg-gray-50 relative border-black/[0.1] w-full h-auto rounded-xl p-6 border  ">
           <CardItem
             translateZ="25"
             className="text-xl font-bold text-neutral-600 cursor-default"
@@ -77,7 +77,8 @@ const TechStack = () => {
   };
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
+      <p>My Skill</p>
       <StackCard type={TECH_TYPE.FRONT_END} stack={FRONT_END} />
       <StackCard type={TECH_TYPE.BACK_END} stack={BACK_END} />
       <StackCard type={TECH_TYPE.OTHERS} stack={OTHERS} />
