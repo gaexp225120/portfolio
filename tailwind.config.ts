@@ -21,14 +21,16 @@ const config = {
       colors: {
         // Dark
         pureBlack: "#333",
-        pureGrey: "#505451",
+        pureGrey: "#979b98",
         /// Light
         accordionTitle: "#f2fcfc",
         accordionContent: "#e5edf09e",
-
+        mainWhite: "#E2E8F0",
         /// Purple
         hoverPurple: "#6c4c95",
         lightPurple: "#966edb",
+        // Blue
+        darkBlue: "#1f1b4b",
         /// rest
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

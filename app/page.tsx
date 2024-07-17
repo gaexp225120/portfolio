@@ -15,8 +15,8 @@ export default function Home() {
   });
 
   return (
-    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-      <div className="lg:flex flex-row lg:justify-between lg:gap-4">
+    <div className="min-h-screen bg-darkBlue px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div className="lg:flex flex-row lg:justify-between lg:gap-4 max-w-screen-xl mx-auto ">
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <SideNavBar sideBarRefs={sideBarRefs} />
         </header>
@@ -32,19 +32,19 @@ export default function Home() {
           </section>
           <section
             ref={(el: HTMLDivElement | null) => {
-              sideBarRefs.current.skill = el;
-            }}
-            id="skill"
-          >
-            <TechStack />
-          </section>
-          <section
-            ref={(el: HTMLDivElement | null) => {
               sideBarRefs.current.experience = el;
             }}
             id="experience"
           >
             <Experience />
+          </section>
+          <section
+            ref={(el: HTMLDivElement | null) => {
+              sideBarRefs.current.skill = el;
+            }}
+            id="skill"
+          >
+            <TechStack />
           </section>
         </main>
       </div>
