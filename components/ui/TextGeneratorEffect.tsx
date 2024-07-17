@@ -6,9 +6,11 @@ import { cn } from "@/lib/utils";
 export const TextGenerateEffect = ({
   words,
   className,
+  textColor = ["text-pureBlack", "text-lightPurple"],
 }: {
   words: string;
   className?: string;
+  textColor?: [string, string];
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -25,7 +27,8 @@ export const TextGenerateEffect = ({
     );
   }, [scope.current]);
 
-  const renderWords = () => {
+  const renderWords = (textColor: [string, string]) => {
+    const [beforeColor, afterColor] = textColor;
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
@@ -34,8 +37,8 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className={`${
                 idx > 3
-                  ? "text-purple-300  text-black opacity-0"
-                  : "dark:text-white text-black opacity-0"
+                  ? `${afterColor} text-black opacity-0`
+                  : `${beforeColor} text-black opacity-0`
               }`}
             >
               {word}{" "}
@@ -50,7 +53,7 @@ export const TextGenerateEffect = ({
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
         <div className=" dark:text-white text-black leading-snug tracking-wide">
-          {renderWords()}
+          {renderWords(textColor)}
         </div>
       </div>
     </div>

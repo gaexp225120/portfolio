@@ -18,7 +18,7 @@ const navigation = [
   { href: "/Contact", name: "Contact me", current: false },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -27,13 +27,13 @@ export default function NavBarMobile() {
   return (
     <Disclosure
       as="nav"
-      className="relative bg-purple-50 sm:shadow-customShadow"
+      className="relative bg-navBarColor sm:shadow-customShadow"
     >
       <div className="mx-auto container px-8 z-10">
         <div className="relative flex items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:invisible">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-pureBlack hover:bg-hoverPurple hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-pureBlack hover:bg-textPurple hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
@@ -69,8 +69,8 @@ export default function NavBarMobile() {
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       item.current
-                        ? " text-hoverPurple"
-                        : "text-pureBlack  hover:text-hoverPurple",
+                        ? " text-textPurple"
+                        : "text-pureBlack  hover:text-textPurple",
                       "text-[18px] font-bold p-8 "
                     )}
                   >
@@ -93,7 +93,7 @@ export default function NavBarMobile() {
               aria-current={item.current ? "page" : undefined}
               className={classNames(
                 item.current
-                  ? "bg-hoverPurple text-pureBlack"
+                  ? "bg-textPurple text-pureBlack"
                   : "text-pureBlack hover:bg-hoverPurple hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
