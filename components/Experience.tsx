@@ -1,6 +1,7 @@
 import React from "react";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import Image from "next/image";
+import Title from "./Title";
 
 interface Experience {
   position: string;
@@ -49,9 +50,7 @@ const EXPERIENCE_LIST: Experience[] = [
 const Experience = () => {
   return (
     <div>
-      <p className="text-mainWhite font-sans text-[40px] sm:text-[50px] md:text-[60px] text-center">
-        Experience
-      </p>
+      <Title text="Experience" />
       {EXPERIENCE_LIST.map((experience, index) => (
         <div className="mx-auto w-full my-5" key={index}>
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-darkBlue ">

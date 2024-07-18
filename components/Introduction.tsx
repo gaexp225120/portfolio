@@ -1,11 +1,12 @@
 import React from "react";
+import Title from "./Title";
 
 type TextBlockProps = {
   text: string;
 };
 
 const TextBlock: React.FC<TextBlockProps> = ({ text }) => (
-  <p className="text-[15px] text-mainWhite my-5">{text}</p>
+  <p className="text-[16px] text-mainWhite mb-5 md:text-[19px]">{text}</p>
 );
 
 const TEXT = [
@@ -24,9 +25,7 @@ const TEXT = [
 const Introduction = () => {
   return (
     <div>
-      <p className="text-mainWhite font-sans text-[40px] sm:text-[50px] md:text-[60px] text-center">
-        About Me
-      </p>
+      <Title text="About Me" applyMarginY={false} />
       <div className="flex flex-row ">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col justify-start ">
