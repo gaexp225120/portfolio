@@ -26,6 +26,7 @@ const TechStack = () => {
 
   const BACK_END: string[] = [
     "python",
+    "flask",
     "node-js",
     "express-js",
     "mongodb",

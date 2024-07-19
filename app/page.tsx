@@ -5,6 +5,7 @@ import SideNavBar from "@/components/SideNavBar";
 import Introduction from "@/components/Introduction";
 import TechStack from "@/components/TechStack";
 import Experience from "@/components/Experience";
+import Project from "@/components/Project";
 
 export default function Home() {
   const sideBarRefs = useRef<{ [key: string]: HTMLDivElement | null }>({
@@ -34,7 +35,8 @@ export default function Home() {
             ref={(el: HTMLDivElement | null) => {
               sideBarRefs.current.experience = el;
             }}
-            id="experience"
+            id="experience "
+            className="scroll-mt-16 lg:scroll-mt-18"
           >
             <Experience />
           </section>
@@ -45,6 +47,15 @@ export default function Home() {
             id="skill"
           >
             <TechStack />
+          </section>
+          <section
+            ref={(el: HTMLDivElement | null) => {
+              sideBarRefs.current.skill = el;
+            }}
+            id="project"
+            className=" w-[300px] h-[300px]"
+          >
+            <Project />
           </section>
         </main>
       </div>

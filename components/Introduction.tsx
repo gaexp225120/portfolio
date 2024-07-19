@@ -13,11 +13,11 @@ const TEXT = [
   `I have approximately 2 and a half years of Full-stack development
             experience and half a year of AI modeling experience. I started
             taking on cases with my classmates during my senior year of college.`,
-  `I&apos;m outgoing and friendly, getting along and collaborating well
+  `I'm outgoing and friendly, getting along and collaborating well
             with everyone. I love learning new technologies and exploring new
             things, and I am diligently working to enhance my skills and become
             a more proficient engineer.`,
-  `When I&apos;m not on the computer, I usually work out at gym, go
+  `When I'm not on the computer, I usually work out at gym, go
             indoor rock climbing, play some video games, or hang out with my
             friends or family`,
 ];
