@@ -2,7 +2,6 @@
 
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
-import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 import Image from "next/image";
 import Title from "./Title";
 

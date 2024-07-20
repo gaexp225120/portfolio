@@ -8,7 +8,7 @@ const Project = () => {
         opacity: 0,
       }}
     >
-      Hover over me and I'll disappear!
+      Hover over me and I&apos;ll disappear!
     </motion.div>
   );
 };
