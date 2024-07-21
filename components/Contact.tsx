@@ -8,7 +8,7 @@ const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 type FormEvent = React.FormEvent<HTMLFormElement>;
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (event: FormEvent) => {
     event.preventDefault();
