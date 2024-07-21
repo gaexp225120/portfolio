@@ -2,7 +2,6 @@ import React from "react";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import Image from "next/image";
 import Title from "./Title";
-
 interface Experience {
   position: string;
   job: string[];
@@ -113,7 +112,7 @@ const Experience = () => {
         </div>
       ))}
       <button
-        className="flex flex-row w-full justify-center mt-[50px] "
+        className="flex flex-row w-full justify-center mt-[48px] animate-bounce"
         onClick={() => handleClickLink("/resume/Resume.pdf" || "")}
       >
         <p className="text-left text-balance text-base md:text-xl lg:text-[30px] font-mono tracking-[-0.015em] text-mainWhite">

@@ -24,14 +24,16 @@ const TEXT = [
 
 const Introduction = () => {
   return (
-    <div>
-      <Title text="About Me" applyMarginY={false} />
-      <div className="flex flex-row ">
-        <div className="flex flex-col justify-center">
-          <div className="flex flex-col justify-start ">
-            {TEXT.map((text, index) => (
-              <TextBlock key={index} text={text} />
-            ))}
+    <div className="overflow-hidden ">
+      <div className="animate__animated animate__fadeInBottomRight">
+        <Title text="About Me" applyMarginY={false} />
+        <div className="flex flex-row ">
+          <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-start ">
+              {TEXT.map((text, index) => (
+                <TextBlock key={index} text={text} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
