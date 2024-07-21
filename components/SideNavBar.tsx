@@ -3,14 +3,16 @@ import TitleArea from "./TitleArea";
 import { SideNavBarProps } from "../Interface/SideNavBarInterface";
 
 const navigationItems: { href: string; label: string }[] = [
-  { href: "about", label: "About" },
-  { href: "skill", label: "My Skill" },
-  { href: "experience", label: "Experience" },
-  { href: "project", label: "Projects" },
+  { href: "about", label: "About Me" },
+  { href: "experience", label: "My Experience" },
+  { href: "toolkit", label: "My Toolkit" },
+  // { href: "project", label: "Projects" },
 ];
 
 const SideNavBar: React.FC<SideNavBarProps> = ({ sideBarRefs }) => {
   const handleClick = (section: string) => {
+    console.log(sideBarRefs);
+    console.log(section);
     const element = sideBarRefs.current?.[section];
     if (element) {
       element.scrollIntoView({

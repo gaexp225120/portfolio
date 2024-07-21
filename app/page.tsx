@@ -10,8 +10,8 @@ import Project from "@/components/Project";
 export default function Home() {
   const sideBarRefs = useRef<{ [key: string]: HTMLDivElement | null }>({
     about: null,
-    skill: null,
     experience: null,
+    toolkit: null,
     project: null,
   });
 
@@ -35,20 +35,21 @@ export default function Home() {
             ref={(el: HTMLDivElement | null) => {
               sideBarRefs.current.experience = el;
             }}
-            id="experience "
+            id="experience"
             className="scroll-mt-16 lg:scroll-mt-18"
           >
             <Experience />
           </section>
           <section
             ref={(el: HTMLDivElement | null) => {
-              sideBarRefs.current.skill = el;
+              sideBarRefs.current.toolkit = el;
             }}
-            id="skill"
+            id="toolkit"
+            className="scroll-mt-16 lg:scroll-mt-18"
           >
             <TechStack />
           </section>
-          <section
+          {/* <section
             ref={(el: HTMLDivElement | null) => {
               sideBarRefs.current.skill = el;
             }}
@@ -56,7 +57,7 @@ export default function Home() {
             className=" w-[300px] h-[300px]"
           >
             <Project />
-          </section>
+          </section> */}
         </main>
       </div>
     </div>
