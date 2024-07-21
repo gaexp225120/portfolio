@@ -10,7 +10,7 @@ const TechStack = () => {
     FRONT_END: "Front End",
     BACK_END: "Back End",
     OTHERS: "Others",
-    KEEPING: "Keeping Going",
+    LEARNING: "Learning",
   };
 
   const FRONT_END: string[] = [
@@ -33,7 +33,7 @@ const TechStack = () => {
   ];
   const OTHERS: string[] = ["git", "github", "gitlab", "docker"];
 
-  const KEEPING: string[] = ["ts", "next-js", "go"];
+  const LEARNING: string[] = ["ts", "next-js", "go"];
 
   interface StackCardProps {
     type: string;
@@ -84,7 +84,7 @@ const TechStack = () => {
       <StackCard type={TECH_TYPE.FRONT_END} stack={FRONT_END} />
       <StackCard type={TECH_TYPE.BACK_END} stack={BACK_END} />
       <StackCard type={TECH_TYPE.OTHERS} stack={OTHERS} />
-      <StackCard type={TECH_TYPE.KEEPING} stack={KEEPING} />
+      <StackCard type={TECH_TYPE.LEARNING} stack={LEARNING} />
     </div>
   );
 };
