@@ -64,7 +64,7 @@ const TechStack = () => {
               >
                 <div className="flex items-center px-[10px]">
                   <Image
-                    src={`/${item.replace(/\s+/g, "")}.svg`}
+                    src={`./${item.replace(/\s+/g, "")}.svg`}
                     alt={item}
                     width={60}
                     height={60}
