@@ -43,7 +43,7 @@ const TechStack = () => {
   const StackCard: React.FC<StackCardProps> = ({ type, stack }) => {
     return (
       <CardContainer className="inter-var w-full">
-        <CardBody className="bg-transparent relative border-black/[0.1] w-full h-auto rounded-[20px] border  ">
+        <CardBody className="bg-transparent relative w-full h-auto rounded-[20px] ">
           <CardItem
             translateZ="25"
             className="text-xl font-bold text-neutral-600 cursor-default"

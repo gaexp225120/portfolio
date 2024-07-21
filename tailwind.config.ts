@@ -30,7 +30,7 @@ const config = {
         hoverPurple: "#6c4c95",
         lightPurple: "#966edb",
         // Blue
-        darkBlue: "#1f1b4b",
+        darkBlue: "#272a41f7",
         /// rest
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

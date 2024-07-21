@@ -5,7 +5,7 @@ import SideNavBar from "@/components/SideNavBar";
 import Introduction from "@/components/Introduction";
 import TechStack from "@/components/TechStack";
 import Experience from "@/components/Experience";
-import Project from "@/components/Project";
+// import Project from "@/components/Project";
 
 export default function Home() {
   const sideBarRefs = useRef<{ [key: string]: HTMLDivElement | null }>({
