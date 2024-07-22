@@ -26,7 +26,7 @@ const Introduction = () => {
   return (
     <div className="overflow-hidden ">
       <div className="animate__animated animate__fadeInBottomRight">
-        <Title text="About Me" applyMarginY={false} />
+        <Title text="ABOUT ME" applyMarginY={false} />
         <div className="flex flex-row ">
           <div className="flex flex-col justify-center">
             <div className="flex flex-col justify-start ">

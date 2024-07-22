@@ -25,7 +25,7 @@ const Title: React.FC<TitleProps> = ({ text, applyMarginY = true }) => {
 
   return (
     <p
-      className={`font-oswald text-mainWhite text-[40px] sm:text-[50px] md:text-[60px] text-center ${
+      className={`font-oswald text-mainWhite text-[40px] sm:text-[50px] md:text-[52px] text-center ${
         applyMarginY ? "my-[45px] md:my-[60px]" : "mb-[45px] md:mb-[60px]"
       } `}
     >

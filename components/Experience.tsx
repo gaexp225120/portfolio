@@ -1,6 +1,6 @@
 import React from "react";
 import { BackgroundGradient } from "../components/ui/background-gradient";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Title from "./Title";
 interface Experience {
   position: string;
@@ -79,7 +79,7 @@ const Experience = () => {
 
   return (
     <div>
-      <Title text="Experience" />
+      <Title text="EXPERIENCE" />
       {EXPERIENCE_LIST.map((experience, index) => (
         <div className="mx-auto w-full my-8" key={index}>
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-darkBlue ">
@@ -91,7 +91,7 @@ const Experience = () => {
                 <p className="text-left text-balance text-base md:text-xl lg:text-[22px] font-mono tracking-[-0.015em] text-mainWhite">
                   {experience.position}
                 </p>
-                <Image
+                <ExportedImage
                   src="link.svg"
                   width={25}
                   height={25}
@@ -118,7 +118,7 @@ const Experience = () => {
         <p className="text-left text-balance text-base md:text-xl lg:text-[30px] font-mono tracking-[-0.015em] text-mainWhite">
           View My full Résumé
         </p>
-        <Image
+        <ExportedImage
           src="link.svg"
           width={25}
           height={25}
