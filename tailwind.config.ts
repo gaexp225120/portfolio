@@ -26,9 +26,13 @@ const config = {
         darkBlue: "#272a41f7",
         lightBlue: "#d9e7ff",
         /// Light
+        pureWhite: "#FFFFFF",
         accordionTitle: "#f2fcfc",
         accordionContent: "#e5edf09e",
         mainWhite: "#E2E8F0",
+        // light blue
+        contactBorder: "#6965f5",
+        sendButtonBg: "#6965f5",
         // light gray(side bar text)
         sideBarTextPurple: "#b9adca",
         /// light purple
