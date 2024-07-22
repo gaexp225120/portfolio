@@ -69,4 +69,7 @@
       url("/cursor.svg") 16 16,
       auto;
   }
+  .negative-scroll-mt-4 {
+    scroll-margin-top: -1rem; /* add negative scroll */
+  }
 }

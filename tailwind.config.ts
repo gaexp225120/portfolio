@@ -22,15 +22,18 @@ const config = {
         // Dark
         pureBlack: "#333",
         pureGrey: "#979b98",
+        // dark blue
+        darkBlue: "#272a41f7",
+        lightBlue: "#d9e7ff",
         /// Light
         accordionTitle: "#f2fcfc",
         accordionContent: "#e5edf09e",
         mainWhite: "#E2E8F0",
-        /// Purple
+        // light gray(side bar text)
+        sideBarTextPurple: "#b9adca",
+        /// light purple
         hoverPurple: "#6c4c95",
         lightPurple: "#966edb",
-        // Blue
-        darkBlue: "#272a41f7",
         /// rest
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -67,8 +70,8 @@ const config = {
         },
       },
       backgroundImage: {
-        "accordion-gradient":
-          "linear-gradient(90deg, rgba(69,45,93,0.989233193277311) 10%, rgba(90,53,125,1) 38%, rgba(118,53,148,1) 65%, rgba(109,33,152,0.5914740896358543) 100%);",
+        "custom-gradient":
+          "linear-gradient(100deg, rgba(0, 62, 84, 1) 0%, rgba(34, 60, 99, 1) 40%, rgba(120, 90, 179, 1) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,18 +80,6 @@ const config = {
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
-      },
-      opacity: {
-        0: "0",
-        100: "1",
-      },
-      visibility: {
-        hidden: "hidden",
-        visible: "visible",
-      },
-      transitionProperty: {
-        opacity: "opacity",
-        visibility: "visibility",
       },
     },
   },

@@ -17,7 +17,7 @@ export default function Home() {
   });
 
   return (
-    <div className="min-h-screen bg-darkBlue px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div className="min-h-screen bg-custom-gradient px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="lg:flex flex-col lg:flex-row lg:justify-between lg:gap-4 max-w-screen-xl mx-auto">
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <SideNavBar sideBarRefs={sideBarRefs} />
@@ -47,18 +47,19 @@ export default function Home() {
               sideBarRefs.current.toolkit = el;
             }}
             id="toolkit"
+            className="negative-scroll-mt-4"
           >
             <TechStack />
           </section>
         </main>
       </div>
-      <footer className="py-12">
+      <footer className="py-12 w-full">
         <section
           ref={(el: HTMLDivElement | null) => {
             sideBarRefs.current.skill = el;
           }}
           id="project"
-          className="max-w-[600px]  mx-auto"
+          className=" mx-auto"
         >
           <Contact />
         </section>
