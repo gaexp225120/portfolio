@@ -52,7 +52,7 @@ const Contact = () => {
             </p>
           </div>
           <ExportedImage
-            src="/images/email.svg"
+            src="./images/email.svg"
             alt="Email"
             width={350}
             height={200}
