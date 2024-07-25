@@ -6,7 +6,7 @@ import "animate.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rick's Portfolio",
+  title: "Rick Wang",
   description: "This is my Portfolio！",
 };
 
