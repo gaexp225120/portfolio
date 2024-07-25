@@ -6,6 +6,7 @@ import Introduction from "@/components/Introduction";
 import TechStack from "@/components/TechStack";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
+import CopyRight from "@/components/CopyRight";
 // import ProgressIndicator from "@/components/ProgressIndicator";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     experience: null,
     toolkit: null,
     project: null,
+    contact: null,
   });
   return (
     <div>
@@ -57,12 +59,21 @@ export default function Home() {
       <footer className="bg-contactBg p-5 sm:p-12 w-full">
         <section
           ref={(el: HTMLDivElement | null) => {
-            sideBarRefs.current.skill = el;
+            sideBarRefs.current.contact = el;
           }}
-          id="project"
+          id="contact"
           className="mx-auto"
         >
           <Contact />
+        </section>
+        <section
+          ref={(el: HTMLDivElement | null) => {
+            sideBarRefs.current.skill = el;
+          }}
+          id="copy-right"
+          className="mx-auto"
+        >
+          <CopyRight />
         </section>
       </footer>
     </div>

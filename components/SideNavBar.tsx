@@ -6,6 +6,7 @@ const navigationItems: { href: string; label: string }[] = [
   { href: "about", label: "About Me" },
   { href: "experience", label: "My Experience" },
   { href: "toolkit", label: "My Toolkit" },
+  { href: "contact", label: "Contact Me" },
   // { href: "project", label: "Projects" },
 ];
 
