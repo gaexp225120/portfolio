@@ -33,6 +33,8 @@ const config = {
         // light blue
         contactBorder: "#6965f5",
         sendButtonBg: "#6965f5",
+        // wait to used
+        contactBg: "#6965f5",
         // light gray(side bar text)
         sideBarTextPurple: "#b9adca",
         /// light purple
@@ -76,6 +78,8 @@ const config = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(100deg, rgba(0, 62, 84, 1) 0%, rgba(34, 60, 99, 1) 40%, rgba(120, 90, 179, 1) 100%)",
+        "form-gradient":
+          "linear-gradient(335deg, rgb(122 151 236 / 90%), rgb(79 67 90 / 90%))",
       },
       borderRadius: {
         lg: "var(--radius)",
