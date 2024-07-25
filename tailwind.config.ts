@@ -89,6 +89,7 @@ const config = {
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
+        sans: ["Source Sans Pro", "sans-serif"],
       },
     },
   },
