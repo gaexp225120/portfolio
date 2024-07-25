@@ -34,7 +34,7 @@ const config = {
         contactBorder: "#6965f5",
         sendButtonBg: "#6965f5",
         // wait to used
-        contactBg: "#6965f5",
+        contactBg: "#201e3e",
         // light gray(side bar text)
         sideBarTextPurple: "#b9adca",
         /// light purple

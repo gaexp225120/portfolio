@@ -17,7 +17,7 @@ export default function Home() {
   });
   return (
     <div>
-      <div className="bg-custom-gradient px-3 py-12 font-sans sm:px-6 md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div className="bg-custom-gradient px-5 py-12 font-sans sm:px-6 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-4 max-w-screen-xl mx-auto">
           <header className="lg:sticky lg:top-0 lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:py-24 w-full">
             <SideNavBar sideBarRefs={sideBarRefs} />
@@ -54,7 +54,7 @@ export default function Home() {
           </main>
         </div>
       </div>
-      <footer className="p-3 sm:p-12 w-full">
+      <footer className="bg-contactBg p-5 sm:p-12 w-full">
         <section
           ref={(el: HTMLDivElement | null) => {
             sideBarRefs.current.skill = el;
