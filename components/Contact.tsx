@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ExportedImage from "next-image-export-optimizer";
 import CustomInput from "./CustomInput";
@@ -11,6 +11,15 @@ type FormEvent = React.FormEvent<HTMLFormElement>;
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isHovered, setIsHovered] = useState({
+    "contact-github": false,
+    "contact-linkedln": false,
+  });
+  const handleMouseEvent = (e: React.MouseEvent<HTMLImageElement>) => {
+    const IsEnter = e.type === "mouseenter";
+    const imageId = e.currentTarget.id;
+    setIsHovered({ ...isHovered, [imageId]: IsEnter ? true : false });
+  };
 
   const sendEmail = (event: FormEvent) => {
     event.preventDefault();
@@ -54,10 +63,47 @@ const Contact = () => {
           <ExportedImage
             src="./images/email.svg"
             alt="Email"
-            width={350}
+            width={300}
             height={200}
             className="hidden lg:block"
           />
+          <div className="flex flex-row w-full justify-around">
+            <ExportedImage
+              src={
+                isHovered["contact-linkedln"]
+                  ? "linkedin-hover.svg"
+                  : "linkedin.svg"
+              }
+              alt="linkedln"
+              id="contact-linkedln"
+              width={40}
+              height={40}
+              className="hidden lg:block cursor-pointer"
+              onMouseEnter={handleMouseEvent}
+              onMouseLeave={handleMouseEvent}
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/chun-huan-w-276032206/",
+                  "_blank"
+                );
+              }}
+            />
+            <ExportedImage
+              src={
+                isHovered["contact-github"] ? "github-hover.svg" : "github.svg"
+              }
+              alt="github"
+              id="contact-github"
+              width={40}
+              height={40}
+              className="hidden lg:block cursor-pointer"
+              onMouseEnter={handleMouseEvent}
+              onMouseLeave={handleMouseEvent}
+              onClick={() => {
+                window.open("https://github.com/gaexp225120", "_blank");
+              }}
+            />
+          </div>
         </div>
         <form
           ref={form}
