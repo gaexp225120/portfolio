@@ -39,14 +39,14 @@ const Contact = () => {
   };
 
   return (
-    <section className="border rounded-[15px] max-w-[1000px] mx-auto">
-      <div className="flex flex-row ">
-        <div className="bg-white bg-opacity-90  rounded-l-[15px] flex flex-col items-center flex-1 px-5">
+    <section className="rounded-[5px] max-w-[1000px] mx-auto bg-form-gradient">
+      <div className="flex flex-col md:flex-row ">
+        <div className="rounded-l-[5px] flex flex-col items-center flex-1 px-5">
           <div className="py-4 lg:py-8 px-4 mx-auto">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
-              CONTACT!
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white ">
+              CONTACT ME!
             </h2>
-            <p className="font-light text-center text-gray-500 sm:text-xl">
+            <p className="font-light text-center text-white sm:text-xl">
               Contact me by submitting the form below and I&apos;ll get back to
               you as soon as possible!!
             </p>
@@ -56,13 +56,13 @@ const Contact = () => {
             alt="Email"
             width={350}
             height={200}
-            className=""
+            className="hidden lg:block"
           />
         </div>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="py-4 lg:py-8 flex-1 px-8"
+          className=" px-8 py-4 lg:py-8 flex-1 "
         >
           <div>
             <CustomInput
