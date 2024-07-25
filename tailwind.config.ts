@@ -33,6 +33,7 @@ const config = {
         // light blue
         contactBorder: "#6965f5",
         sendButtonBg: "#6965f5",
+        formbuttonHover: "#868cff",
         // wait to used
         contactBg: "#201e3e",
         // light gray(side bar text)

@@ -40,13 +40,13 @@ interface StackCardProps {
 const StackCard: React.FC<StackCardProps> = ({ type, stack }) => {
   return (
     <CardContainer className="inter-var w-full">
-      <CardBody className="bg-transparent relative w-full h-auto rounded-[20px] ">
+      <CardBody className="bg-transparent relative w-full h-auto  ">
         <CardItem
           translateZ="25"
           className=" w-full text-xl font-bold text-neutral-600 cursor-default"
         >
-          <div className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-pureBlack rounded-lg group bg-gradient-to-br from-purple-300 to-blue-200">
-            <span className="text-[19px] relative px-5 py-2.5 transition-all ease-in duration-75  rounded-md">
+          <div className=" rounded-[8px] relative inline-flex items-center justify-center p-0.5 mx-4 mb-2 me-2 overflow-hidden text-sm font-medium text-pureBlack group bg-gradient-to-br from-purple-300 to-blue-200">
+            <span className="text-[19px] relative px-5 py-2.5 transition-all ease-in duration-75 rounded-md">
               {type}
             </span>
           </div>

@@ -12,7 +12,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const InputClasses =
-  "w-full p-3 rounded-lg focus:outline-none focus:ring-0 focus:border-contactBorder border-[3px] border-transparent";
+  "w-full p-3 rounded-[10px] focus:outline-none focus:ring-0 focus:border-contactBorder border-[5px] border-transparent";
 
 const CustomInput: React.FC<InputProps> = ({
   inputname,
@@ -39,7 +39,7 @@ const CustomInput: React.FC<InputProps> = ({
           name={inputname}
           id={id}
           rows={rows}
-          className={`${className} ${InputClasses}`}
+          className={`${className} ${InputClasses} resize-none`}
           placeholder={placeholder}
         />
       ) : (

@@ -88,14 +88,13 @@ const Contact = () => {
               id="message"
               label="Your message"
               isTextArea={true}
-              className="resize-none block p-2.5 w-full text-sm text-mainWhite bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
               placeholder="Leave a comment..."
             />
           </div>
           <div className="w-full flex justify-center mt-8">
             <button
               type="submit"
-              className="px-12 py-4 rounded-full bg-pureWhite font-bold text-pureBlack tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
+              className="px-12 py-4 rounded-[10px] bg-pureWhite font-bold text-pureBlack tracking-widest uppercase transform hover:scale-105 hover:bg-formbuttonHover transition-colors duration-200"
             >
               Send
             </button>
