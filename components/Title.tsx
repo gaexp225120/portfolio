@@ -6,11 +6,11 @@ interface TitleProps {
 }
 
 const Title: React.FC<TitleProps> = ({ text, applyMarginY = true }) => {
-  const [isMdScreen, setIsMdScreen] = useState(false);
+  const [isLgScreen, setIsLgScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMdScreen(window.innerWidth >= 768); // Tailwind's md breakpoint is 768px
+      setIsLgScreen(window.innerWidth >= 1024); // Tailwind's md breakpoint is 768px
     };
 
     window.addEventListener("resize", handleResize);
@@ -26,7 +26,11 @@ const Title: React.FC<TitleProps> = ({ text, applyMarginY = true }) => {
   return (
     <p
       className={`font-oswald text-mainWhite text-[40px] sm:text-[50px] md:text-[52px] text-center ${
-        applyMarginY ? "my-[45px] md:my-[60px]" : "mb-[45px] md:mb-[60px]"
+        isLgScreen
+          ? applyMarginY
+            ? "my-[45px] md:my-[60px]"
+            : "mb-[45px] md:mb-[60px]"
+          : "my-[45px] md:my-[60px]"
       } `}
     >
       {text}
