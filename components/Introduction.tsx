@@ -10,7 +10,7 @@ const TextBlock: React.FC<TextBlockProps> = ({ text }) => (
 );
 
 const TEXT = [
-  `I have approximately 2 and a half years of Full-stack development
+  `I have approximately 2 years of Full-stack development
             experience and half a year of AI modeling experience. I started
             taking on cases with my classmates during my senior year of college.`,
   `I'm outgoing and friendly, getting along and collaborating well

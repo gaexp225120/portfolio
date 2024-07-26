@@ -7,17 +7,17 @@ const TitleArea = () => {
         <TextGenerateEffect
           className="text-[36px] text-lightPurple md:text-[40px] lg:text-[48px] max-w-md leading-normal "
           textColor={["text-mainWhite", "text-lightPurple"]}
-          words="Hello I'm XX."
+          words="Hello I'm Rick."
         />
         <TextGenerateEffect
           className="text-lg md:text-xl lg:text-2xl max-w-md leading-normal"
           textColor={["text-mainWhite", "text-pureGrey"]}
-          words="Full-Stack Engineer"
+          words="Software Engineer"
         />
         <TextGenerateEffect
-          className="text-lg md:text-xl lg:text-2xl max-w-md leading-normal"
+          className="text-lg md:text-xl lg:text-[20px] max-w-md leading-normal"
           textColor={["text-mainWhite", "text-lightPurple"]}
-          words="Full-stack engineer who writes clean, reusable and elegant code"
+          words="A Software developer with a passion for creating application with excellent design and user experience🔥！"
         />
       </div>
     </div>
