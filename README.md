@@ -2,6 +2,8 @@
 
 Demo(Continually updated)：https://gaexp225120.github.io/portfolio/
 
+Demo Vercel：https://portfolio-asvt342kc-gaexp225120s-projects.vercel.app/
+
 ## **Tech I used**
 
 ---
@@ -12,5 +14,5 @@ Demo(Continually updated)：https://gaexp225120.github.io/portfolio/
 4. [Aceternity UI](https://ui.aceternity.com/)
 5. [Framer Motion](https://www.framer.com/motion/)
 6. [Tailwind CSS](https://tailwindcss.com/)
-8. [JavaScript](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript)
-9. [TypeScript](https://www.typescriptlang.org/)
+7. [JavaScript](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript)
+8. [TypeScript](https://www.typescriptlang.org/)
