@@ -53,7 +53,7 @@ const Contact = () => {
         <div className="rounded-l-[5px] flex flex-col items-center flex-1 px-5">
           <div className="py-4 lg:py-8 px-4 mx-auto">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white ">
-              CONTACT ME!
+              CONTACT ME
             </h2>
             <p className="font-light text-center text-white sm:text-xl">
               Contact me by submitting the form below and I&apos;ll get back to
