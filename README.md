@@ -2,7 +2,6 @@
 
 Demo(Continually updated)：https://gaexp225120.github.io/portfolio/
 
-Demo Vercel：https://portfolio-asvt342kc-gaexp225120s-projects.vercel.app/
 
 ## **Tech I used**
 
