@@ -6,7 +6,7 @@ const CopyRight = () => {
     <div>
       <div className="pt-4 lg:pt-8 px-4 mx-auto">
         <p className="text-[14px] tracking-tight font-normal text-center text-white ">
-          © Copyright 2024. &nbsp; Developed By Rick Wang
+          © Copyright 2024. &nbsp; Developed By Github@gaexp225125
         </p>
       </div>
     </div>

@@ -7,7 +7,7 @@ const TitleArea = () => {
         <TextGenerateEffect
           className="text-[36px] text-lightPurple md:text-[40px] lg:text-[48px] max-w-md leading-normal "
           textColor={["text-mainWhite", "text-lightPurple"]}
-          words="Hello I'm Rick."
+          words="Hello I'm Chun Huan Wang."
         />
         <TextGenerateEffect
           className="text-lg md:text-xl lg:text-2xl max-w-md leading-normal"
